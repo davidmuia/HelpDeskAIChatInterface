@@ -62,7 +62,7 @@ def main():
         st.button("Clear Chat", on_click=clear_chat_history, icon=":material/delete:", type="primary")  # Add clear chat button
 
     # --- Chat Interface Elements ---
-    chat_area = st.container(height=325)  # holds messages for scrolling
+    chat_area = st.container(height=500)  # holds messages for scrolling
 
     if question:
         # --- Add User Question to Conversation History ---
