@@ -252,7 +252,7 @@ def chunk_text(text, chunk_size=500, chunk_overlap=50):
     return chunks
 
 # --- Gemini Response Function ---
-def generate_response(context, question, temperature=0.5):
+def generate_response(context, question, temperature=0.3):
     prompt = f"""
     You are a helpful assistant that is used to answer questions based on the documents from the database and provided context and
     also general IT queries and other topics not found in the documents. Your tone should be more conversational, personal and sound more human like. 
