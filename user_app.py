@@ -51,7 +51,7 @@ def main():
     )
 
     # --- Fixed Title at the Top ---
-    st.title("What Can I Help With")
+    st.subheader("What Can I Help With")
 
     # --- Initialize Conversation History in Session State ---
     if "conversation_history" not in st.session_state:
