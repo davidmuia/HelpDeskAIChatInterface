@@ -24,6 +24,10 @@ def main():
     st.markdown(
         """
         <style>
+            #GithubIcon {
+              visibility: hidden;
+                }
+
             .user-message {
                 
                 margin-left: 50%; /* Push to the right */
