@@ -263,7 +263,7 @@ def generate_response(context, question, temperature=0.3):
     If the question asked is not clear, ask for more information from the user and base your response on the context 
     of their response and their previous questions and the responses you gave. 
     Based on the current conversation history can you come up with the most relevant follow up questions 
-    a user might need assistance on only. Can be one or two but at most 3. Format them in italics
+    a user might need assistance on only. The questions can be one or two but at most 3 and have few wordings. Format them in italics
     For issues not sure of how to respond, advise the users to 
     contact IT via 0746752351 or sending an email at ithelpdesk@pendahealth.com
     
