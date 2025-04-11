@@ -259,7 +259,7 @@ def generate_response(context, question, temperature=0.3):
     Your Responses should be structured and in step-by-step format to help clarify why the response you gave is the most 
     appropriate one. The response should also be simple, rich in details, easy to understand and provide examples if necessary.
     Avoid using words such as According to the documentation or documents provided when responding to users. Do not infer to them that you 
-    have been provided information to respond with
+    have been provided information to respond with so also avoid saying things like according to the information I have
     Always look at previous user questions to understand the context so you can easily answer follow up questions. 
     If the question asked is not clear, ask for more information from the user and base your response on the context 
     of their response and their previous questions and the responses you gave. 
