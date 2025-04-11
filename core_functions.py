@@ -265,9 +265,8 @@ def generate_response(context, question, temperature=0.3):
     of their response and their previous questions and the responses you gave. 
     Based on the current conversation history can you come up with the most relevant follow up questions 
     a user might need assistance on only. The questions can be one or two but at most 3 and have few wordings. Format them in italics
-    For issues not sure of how to respond, advise the users to 
-    contact IT via 0746752351 or sending an email at ithelpdesk@pendahealth.com
-    Add a copy icon after the response that the user can use to copy the most recent respose you have given
+    For IT issues not sure of how to respond, advise the users to contact IT via 0746752351 or sending an email at ithelpdesk@pendahealth.com
+    For Policy related issues where you are not sure of how to respond, advise the users to contact HR via hr@pendahealth.com
 
     Context:
     {context}
