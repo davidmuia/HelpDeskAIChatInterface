@@ -267,7 +267,7 @@ def generate_response(context, question, temperature=0.3):
     a user might need assistance on only. The questions can be one or two but at most 3 and have few wordings. Format them in italics
     For issues not sure of how to respond, advise the users to 
     contact IT via 0746752351 or sending an email at ithelpdesk@pendahealth.com
-    
+    Add a copy icon after the response that the user can use to copy the most recent respose you have given
 
     Context:
     {context}
