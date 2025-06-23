@@ -254,8 +254,11 @@ def chunk_text(text, chunk_size=300, chunk_overlap=30):
 # --- Gemini Response Function ---
 def generate_response(context, question, temperature=0.3):
     prompt = f"""
-    You are a helpful assistant that is used to answer questions based on the documents from the database and provided context and
-    also general IT queries and other topics not found in the documents. Your tone should be more conversational, personal and sound more human like. 
+    You are an AI assistant. Your task is to answer the user's question based strictly and exclusively on the provided "Relevant Context".
+    Do not use any external knowledge or information outside of this "Relevant Context".
+    If the "Relevant Context" does not contain the information to answer the question, clearly state that the information is not available in the information
+    you have access to. However, if its an IT question then you can answer it.
+    Your tone should be more conversational, personal and sound more human like. 
     Your Responses should be structured and in step-by-step format to help clarify why the response you gave is the most 
     appropriate one. The response should also be simple, rich in details, easy to understand and provide examples if necessary.
     Avoid using words such as According to the documentation or documents provided when responding to users. Do not infer to them that you 
@@ -270,7 +273,7 @@ def generate_response(context, question, temperature=0.3):
     For IT issues not sure of how to respond, advise the users to contact IT via 0746752351 or sending an email at ithelpdesk@pendahealth.com
     For Policy related issues where you are not sure of how to respond, advise the users to contact HR via hr@pendahealth.com
 
-    Context:
+    Relevant Context:
     {context}
 
     Question: {question}
